@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ashui.css">
+</head>
+<body>
+    <div class="details">
+     <img src="images/logo1.png" class="img" draggable="false" alt="logo">
+     <h2>Asui BO</h2>
+     <marquee behavior="" direction="left"><p>This form is Only for Nischinta Village</p></marquee>
+    </div>
+<!-- -----------Form Start ------------------------- -->
+<div class="container">
+  <form name="nischinta">
+    <label for="fname">Sl No.</label>
+    <input type="text" id="fname" name="Sl No" placeholder="Sl No.." required>
+
+    <label for="lname">Name Of The Head Of the Family (পরিবার প্রধানের নাম)</label>
+    <input type="text" id="lname" name="Name Of The Head Of the Family" placeholder="Name Of The Head Of the Family">
+
+    <label for="fname">Mobile number (মোবাইল নম্বর)</label>
+    <input type="text" id="fname" name="Mobile number" placeholder="Mobile number">
+
+    <label for="fname">Aadhaar No (আধার নং)</label>
+    <input type="text" id="fname" name="Aadhaar No" placeholder="Aadhaar No">
+
+    <label for="fname">Total Family Members (পরিবারের মোট সদস্য)</label>
+    <input type="text" id="fname" name="Total Family Members" placeholder="Total Family Members">
+
+    <label for="subject">Name Of Family Members (পরিবারের সদস্যদের নাম)</label>
+    <textarea id="subject" name="Name Of Family Members" placeholder="Name Of Family Members" style="height:150px"></textarea>
+
+    <label for="subject">Aadhaar No of Family Members (পরিবারের সদস্যগণ আধার নম্বর)</label>
+    <textarea id="subject" name="Aadhaar No of Family Members" placeholder="Aadhaar No" style="height:150px"></textarea>
+
+    <label for="subject">Gender (লিঙ্গ)</label>
+    <textarea id="subject" name="Gender" placeholder="Gender" style="height:150px"></textarea>
+
+    <label for="subject">Age (বয়স)</label>
+    <textarea id="subject" name="Age" placeholder="Age" style="height:150px"></textarea>
+
+    <label for="subject">Occupation (পেশা)</label>
+    <textarea id="subject" name="Occupation" placeholder="Occupation" style="height:150px"></textarea>
+
+    <label for="inputState">SB</label>
+      <select id="inputState" name="SB" class="form-control">
+        <option selected>************ Select ************</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="inputState">RD</label>
+      <select id="inputState" name="RD" class="form-control">
+        <option selected>************ Select ************</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="inputState">TD</label>
+      <select id="inputState" name="TD" class="form-control">
+        <option selected>************ Select ************</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="inputState">SSA</label>
+      <select id="inputState" name="SSA" class="form-control">
+        <option selected>************ Select ************</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="inputState">SCSS</label>
+      <select id="inputState" name="SCSS" class="form-control">
+        <option selected>************ Select ************</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="inputState">MIS</label>
+      <select id="inputState" name="MIS" class="form-control">
+        <option selected>************ Select ************</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="inputState">RPLI</label>
+      <select id="inputState" name="RPLI" class="form-control">
+        <option selected>************ Select ************</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="inputState">PLI</label>
+      <select id="inputState" name="PLI" class="form-control">
+        <option selected>************ Select ************</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+     <button button type="submit" name="submit" value="Send message" >Submit</button>
+  </form>
+</div>
+<!-------------------------- Form End ------------------ -->
+<!-- Footer Start -->
+
+<footer class="foot">
+  <span>Created By <a href="http://www.biplab.ml" target="_blank">Biplab</a> | <span class="far fa-copyright"></span>Copyright @ 2021 All rights reserved.</span>
+</footer>
+
+<!-- Script -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSQFWm47siU-6S67p3jVfhyVg5cbSDRQQqlI8Ruxf_Cgzsb-sLWupTouAiXuM0PmuyJA/exec'
+  const form = document.forms['nischinta']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thank You....!        Your Data has Been Submitted Successfully in Our Database.....!"))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>

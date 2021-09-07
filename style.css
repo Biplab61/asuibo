@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(251, 240, 240); 
+  }
+  .container {
+    border-radius: 8px;
+    background-color: rgb(243, 222, 222);
+    padding: 20px;
+  }
+  .img{
+    height: 99px;
+    width: 100%;
+    padding: 0px 30px 20px 30px;
+}
+  .details h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;
+    border-radius: 5px;
+    background-color: rgb(230, 140, 140);
+    color: rgb(71, 33, 33);
+}
+.details marquee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: rgb(230, 140, 140);
+    color: rgb(41, 26, 26);
+    border-radius: 5px;
+}
+.details marquee h3{
+  font-weight: 700;
+  font-size: 20px;
+}
+.villages{
+  margin-top: 20px;
+  background-color: rgb(251, 233, 233);
+  border-radius: 10px;
+  box-shadow: rgb(41, 26, 26);
+  padding-top: 30px;
+  border: 1px solid rgb(189, 74, 74);
+}
+.villages a{
+  height: 30px;
+  width: 180px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 28px;
+  color: rgb(189, 74, 74);
+}
+.villages a:hover{
+  color: rgb(0, 0, 0);
+}
+.vill{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 55px;
+}
+.foot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(231, 193, 193);
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.foot a{
+text-decoration: none;
+color: #e6194c;
+margin-top: 12px;
+}
